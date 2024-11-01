@@ -395,13 +395,59 @@ link a.selected {
   font-weight: 600;
 }
 
-/* CARDS MODELS */
+/* FAQ */
 
-.cards-container .cards-hero h3 {
-  font-size: 1.2rem;
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 120px;
+  gap: 24px;
 }
 
-.cards-container .cards-hero p {
+.faq-description-off {
+  display: none;
+}
+
+.faq-title {
+  padding-bottom: 4px;
+  border-bottom: 4px solid #b4d744;
+}
+
+.faq-title > h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.question {
+  background: linear-gradient(#5d5d5d2d, #3d3d3d2d);
+  border: 1px solid #6d6d6d;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+  color: #ffffff;
+}
+
+.header-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.faq-btn {
+  padding: 0px;
+  background-color: #ffffff00;
+  border: none;
+}
+
+.faq-description {
+  color: #b0b0b0;
   font-size: 1rem;
   line-height: 150%;
 }
