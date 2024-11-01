@@ -272,10 +272,22 @@ link a.selected {
   height: 640px;
 }
 
-.agro-ai-content > h2 {
+.agro-ai-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.agro-ai-header > h2 {
   color: #ffffff;
   line-height: 150%;
   font-size: 2rem;
+}
+
+.agro-ai-content > h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 150%;
 }
 
 .agro-ai-content > img {
