@@ -15,12 +15,13 @@
 
 <body>
   <header>
-    <a href="http://terrasense.ai" id="link-logo"><img src="./src/terrasense_logohorizontal_branca.svg" alt="Terra Sense AI Logo Horizontal Branca"></a>
+    <a href="http://terrasense.ai" id="link-logo"><img src="./src/terrasense_logohorizontal_branca.svg"
+        alt="Terra Sense AI Logo Horizontal Branca"></a>
     <ul class="ul-navmenu">
-      <li><a href="http://" class="link-menu">Início</a></li>
-      <li><a href="http://" class="link-menu">Sobre Nós</a></li>
-      <li><a href="http://" class="link-menu">Agro AI</a></li>
-      <li><a href="http://" class="link-menu">Notícias</a></li>
+      <li><a href="#inicio" class="link-menu">Início</a></li>
+      <li><a href="#quem-somos" class="link-menu">Quem Somos</a></li>
+      <li><a href="#agro-ai" class="link-menu">Agro AI</a></li>
+      <li><a href="noticias" class="link-menu">Notícias</a></li>
       <li><a href="http://" class="link-menu">Mercado</a></li>
       <li><a href="http://" class="link-menu">Perguntas Frequentes</a></li>
       <li><a href="http://" class="link-menu">Contato</a></li>
@@ -30,71 +31,163 @@
       <button class="btn-filled">Criar Conta</button>
     </section>
   </header>
-  <section class="hero">
+  <section class="hero" id="inicio">
     <img src="./src/terrasense_logovertical_branca.svg" alt="Terra Sense AI Logo Vertical Branca" id="hero-logo">
-    <div class="cards-container">
-      <div class="cards-hero">
-        <h3>1. Chatbox Integrado com IA</h3>
-        <p>Converse com nossa Inteligência Artificial para obter respostas rápidas e personalizadas sobre sua lavoura.
-          Tire dúvidas sobre clima, pragas e muito mais, com o suporte de IA de última geração.</p>
-        <button class="btn-outlined">Detalhes</button>
+    <div class="container-hero">
+      <h1>Plantando tecnologia, colhendo resultados</h1>
+      <div class="buttons-hero">
+        <button class="btn-outlined">Entrar em Contato</button>
+        <button class="btn-filled">Criar Conta</button>
       </div>
-      <div class="cards-hero">
-        <h3>2. Clima em Tempo Real</h3>
-        <p>Fique sempre à frente do clima com previsões meteorológicas em tempo real. Receba alertas sobre mudanças
-          climáticas que podem impactar sua plantação e tome decisões mais inteligentes.</p>
-        <button class="btn-outlined">Detalhes</button>
+      <img src="./src/icon_scroll_down.svg" alt="Ícone Scroll Down">
+    </div>
+  </section>
+  <section class="quem-somos" id="quem-somos">
+    <div class="que-tal-transformar">
+      <h3>Que tal transformar a sua terra em tudo que sempre sonhou?</h3>
+      <div class="nos-somos-terrasense">
+        <h2>NÓS SOMOS A</h2>
+        <img src="./src/terrasense_tipografia.svg" alt="Terra Sense AI">
       </div>
-      <div class="cards-hero">
-        <h3>3. Notícias e Tendências do Mercado</h3>
-        <p>Atualize-se com as últimas notícias do mercado agrícola e as tendências que afetam seu negócio. Receba
-          insights sobre cotações de insumos, eventos e legislações importantes.</p>
-        <button class="btn-outlined">Detalhes</button>
+      <p>Uma plataforma de inteligência artificial que oferece soluções completas para pequenos e médios agricultores,
+        desde o plantio até a colheita, otimizando cada etapa com base em dados personalizados.</p>
+    </div>
+    <img class="quem-somos-img" src="./src/hand_mockup.png"
+      alt="Mockup e mãos com um celular apresentando a tela inicial do Terra Sense AI">
+    <div class="como-funciona">
+      <h2>Como Funciona?</h2>
+      <div class="etapas-funcionamento">
+        <h3><span>1.</span> Cadastre-se no nosso APP</h3>
+        <p>Basta clicar em <a class="link" href="https://google.com">cadastre-se</a> ou no botão no canto superior
+          direito. Você só irá precisar colocar o seu nome,
+          e-mail, whatsapp e senha, ou se preferir, pode se conectar com sua conta do Google ou Facebook.</p>
       </div>
-      <div class="cards-hero">
-        <h3>4. Personalização de Experiência</h3>
-        <p>Personalize sua experiência com a TerraSenseAI. Adapte as informações e notificações conforme suas
-          necessidades específicas para otimizar o processo agrícola.</p>
-        <button class="btn-outlined">Detalhes</button>
+      <div class="etapas-funcionamento">
+        <h3><span>2.</span> Responda as perguntas sobre a sua terra</h3>
+        <p>Para personalizar as suas respostas com base na sua terra, nós preparamos uma sequência de perguntas
+          importantes para entendermos melhor sobre você e quais desafios agrícolas você enfrenta em sua propriedade.
+        </p>
       </div>
-      <div class="cards-hero">
-        <h3>5. Monitoramento de Desempenho</h3>
-        <p>Acompanhe a produtividade da sua fazenda com indicadores de performance. Compare safras anteriores, controle
-          o consumo de insumos e maximize seus resultados.</p>
-        <button class="btn-outlined">Detalhes</button>
-      </div>
-      <div class="cards-hero">
-        <h3>6. Sugestões de Plantio Baseadas no Clima</h3>
-        <p>Saiba a época ideal para o plantio com base nas condições climáticas da sua região. Nossa IA oferece
-          recomendações precisas para garantir o melhor rendimento possível.</p>
-        <button class="btn-outlined">Detalhes</button>
-      </div>
-      <div class="cards-hero">
-        <h3>7. Identificação de Pragas e Controle</h3>
-        <p>Detecte pragas comuns rapidamente e receba orientações sobre controle orgânico ou químico. Nossa IA ajuda
-          você a proteger sua plantação de forma eficiente.</p>
-        <button class="btn-outlined">Detalhes</button>
-      </div>
-      <div class="cards-hero">
-        <h3>8. Geolocalização Personalizada</h3>
-        <p>Receba recomendações automatizadas de plantio e colheita com base nas condições de solo e clima da sua
-          localização. Soluções específicas para sua região.</p>
-        <button class="btn-outlined">Detalhes</button>
-      </div>
-      <div class="cards-hero">
-        <h3>9. Dashboard de Métricas</h3>
-        <p>Acompanhe previsões climáticas, indicadores de produtividade, consumo de insumos e receitas em um dashboard
-          completo e fácil de usar.</p>
-        <button class="btn-outlined">Detalhes</button>
-      </div>
-      <div class="cards-hero">
-        <h3>10. Alertas Meteorológicos e de Pragas</h3>
-        <p>Receba notificações em tempo real sobre mudanças climáticas e alertas de pragas em sua região. Prepare-se
-          para o inesperado e proteja sua safra.</p>
-        <button class="btn-outlined">Detalhes</button>
+      <div class="etapas-funcionamento">
+        <h3><span>3.</span> Veja o resultado da nossa análise</h3>
+        <p>Por fim, você poderá ver o resultado da nossa análise e começar a trabalhar em cima da sua terra, além de
+          receber notícias diárias e tirar todas as suas dúvidas sobre qualquer assunto agrícola.</p>
       </div>
     </div>
   </section>
+  <section class="agro-ai" id="agro-ai">
+    <div class="agro-ai-content">
+      <h2>Como funciona a Inteligência Artificial da</h2>
+      <img src="./src/terrasense_tipografia.svg" alt="Terra Sense AI">
+      <h3>Utilizamos tecnologia de ponta, o Chat GPT-4, que processa grandes volumes de dados agrícolas, climáticos e
+        regionais para oferecer soluções personalizadas aos agricultores, da seguinte forma:</h3>
+      <ol>
+        <li><span>Coleta e Análise de Dados:</span> A IA coleta dados de diversas fontes, como previsões meteorológicas,
+          notícias agrícolas e informações sobre pragas. Com a permissão do usuário, também utiliza dados de localização
+          para oferecer recomendações mais precisas.</li>
+        <li><span>Processamento Inteligente:</span> Usando o Chat GPT-4, a IA pro cessa essas informações e gera
+          sugestões detalhadas sobre as melhores práticas de plantio, irrigação, compra de insumos e cuidados com a
+          plantação, tudo adaptado ao tamanho da fazenda e às condições locais.</li>
+        <li><span>Interação com o Usuário:</span> Através de uma interface intuitiva, o agricultor pode fazer perguntas
+          diretas à IA sobre como proceder em determinadas situações (como pragas ou clima desfavorável) e receber
+          respostas instantâneas, baseadas nas melhores práticas agrícolas.</li>
+        <li><span>Recomendações Personalizadas:</span> A IA oferece planos de ação específicos, como quais materiais
+          comprar, quando e como plantar, e até onde vender a produção, tudo baseado nas necessidades do usuário e nas
+          condições reais do terreno e do clima.</li>
+      </ol>
+    </div>
+    <div class="agro-ai-img">
+      <img src="./src/mocku_ai.png" alt="Mockup do chat com a Inteligência Artificial da Terra Sense AI">
+    </div>
+  </section>
+  <section class="noticias" id="noticias">
+    <div class="header-cards-container">
+      <h2>Notícias em tempo real</h2>
+      <h3>Temos notícias sobre o Agro no Brasil e no Mundo atualizadas em tempo real</h3>
+      <p>Fique por dentro de tudo que acontece no mundo do Agronegócio no Brasil e no Mundo com nossas notícias em tempo
+        real e notificações.</p>
+    </div>
+    <div class="cards-container">
+      <div class="card-noticia">
+        <div class="img-noticia">
+
+        </div>
+        <div class="header-card-noticia">
+          <div class="titulo-noticia">
+            <h4>Notícia</h4>
+          </div>
+
+          <div class="categoria-noticia">
+            <p>Categoria</p>
+          </div>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas autem sunt nemo ducimus quisquam doloremque
+          facilis dignissimos consequatur alias incidunt sit esse debitis, consectetur quia atque fugiat voluptatibus ex
+          corporis iusto, nulla expedita. Officia, tempore architecto unde quidem ea commodi nesciunt vel quo sequi
+          suscipit dolorum voluptatum reprehenderit tempora rerum.</p>
+        <div><a href="#" class="link">Ler mais</a></div>
+      </div>
+      <div class="card-noticia">
+        <div class="img-noticia">
+
+        </div>
+        <div class="header-card-noticia">
+          <div class="titulo-noticia">
+            <h4>Notícia</h4>
+          </div>
+
+          <div class="categoria-noticia">
+            <p>Categoria</p>
+          </div>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas autem sunt nemo ducimus quisquam doloremque
+          facilis dignissimos consequatur alias incidunt sit esse debitis, consectetur quia atque fugiat voluptatibus ex
+          corporis iusto, nulla expedita. Officia, tempore architecto unde quidem ea commodi nesciunt vel quo sequi
+          suscipit dolorum voluptatum reprehenderit tempora rerum.</p>
+        <div><a href="#" class="link">Ler mais</a></div>
+      </div>
+      <div class="card-noticia">
+        <div class="img-noticia">
+
+        </div>
+        <div class="header-card-noticia">
+          <div class="titulo-noticia">
+            <h4>Notícia</h4>
+          </div>
+
+          <div class="categoria-noticia">
+            <p>Categoria</p>
+          </div>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas autem sunt nemo ducimus quisquam doloremque
+          facilis dignissimos consequatur alias incidunt sit esse debitis, consectetur quia atque fugiat voluptatibus ex
+          corporis iusto, nulla expedita. Officia, tempore architecto unde quidem ea commodi nesciunt vel quo sequi
+          suscipit dolorum voluptatum reprehenderit tempora rerum.</p>
+        <div><a href="#" class="link">Ler mais</a></div>
+      </div>
+      <div class="card-noticia">
+        <div class="img-noticia">
+
+        </div>
+        <div class="header-card-noticia">
+          <div class="titulo-noticia">
+            <h4>Notícia</h4>
+          </div>
+
+          <div class="categoria-noticia">
+            <p>Categoria</p>
+          </div>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas autem sunt nemo ducimus quisquam doloremque
+          facilis dignissimos consequatur alias incidunt sit esse debitis, consectetur quia atque fugiat voluptatibus ex
+          corporis iusto, nulla expedita. Officia, tempore architecto unde quidem ea commodi nesciunt vel quo sequi
+          suscipit dolorum voluptatum reprehenderit tempora rerum.</p>
+        <div><a href="#" class="link">Ler mais</a></div>
+      </div>
+    </div>
+
+  </section>
+
 </body>
 
 </html>
