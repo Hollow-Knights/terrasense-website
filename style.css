@@ -255,6 +255,36 @@ link a.selected {
   font-size: 1.2rem;
 }
 
+/* O QUE A TERRASENSEAI OFERECE */
+.offer-container {
+  padding: 64px 120px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./src/background_pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.offer-container h2 {
+  color: #ffffff;
+  line-height: 150%;
+  font-size: 2rem;
+}
+
+.offer-container p {
+  color: #b0b0b0;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.offer-container button {
+  padding: 0px;
+  background-color: #ffffff00;
+  border: none;
+}
+
 /* AGRO AI */
 
 .agro-ai {
