@@ -227,6 +227,12 @@ link a.selected {
   gap: 32px;
 }
 
+.como-funciona > h2 {
+  color: #ffffff;
+  line-height: 150%;
+  font-size: 2rem;
+}
+
 .etapas-funcionamento {
   display: flex;
   flex-direction: column;
@@ -256,6 +262,28 @@ link a.selected {
 }
 
 /* O QUE A TERRASENSEAI OFERECE */
+
+.title-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-left: 175px;
+  padding-bottom: 50px;
+}
+
+.title-offer > h2 {
+  font-size: 2rem;
+  padding-top: 16px;
+}
+
+.simbol-background {
+position: relative;
+top: 50%;
+right: 50%;
+opacity: 15%;
+}
+
 .offer-container {
   padding: 64px 120px;
   display:flex;
@@ -283,6 +311,88 @@ link a.selected {
   padding: 0px;
   background-color: #ffffff00;
   border: none;
+}
+
+.offer-slides {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.slide-container {
+  position: relative;
+  display: flex;
+  width: 90%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #5D5D5D;
+  border-radius: 8px;
+  background: linear-gradient(#5d5d5d2d, #3d3d3d2d);
+  overflow: hidden;
+}
+
+.slider {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.slide {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  overflow: hidden;
+}
+
+.active {
+  display: flex;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 64px 120px;
+}
+
+.content-container > h2 {
+  margin-bottom: 16px;
+}
+
+.content-container > h2 > span {
+  color: #b4d744;
+}
+
+.image-container {
+  object-position: center;
+  overflow: hidden;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.image-container > img {
+  height: 100%;
+}
+
+.prev {
+  position: absolute;
+  left: 5%;
+}
+
+.next {
+  position: absolute;
+  right: 5%;
 }
 
 /* AGRO AI */
