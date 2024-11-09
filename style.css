@@ -123,7 +123,7 @@ header {
 }
 
 link a:hover {
-  color:#87a922;
+  color: #87a922;
   text-decoration: underline;
 }
 
@@ -279,15 +279,15 @@ link a.selected {
 }
 
 .simbol-background {
-position: relative;
-top: 50%;
-right: 50%;
-opacity: 15%;
+  position: relative;
+  top: 50%;
+  right: 50%;
+  opacity: 15%;
 }
 
 .offer-container {
   padding: 64px 120px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -328,7 +328,7 @@ opacity: 15%;
   height: auto;
   align-items: center;
   justify-content: center;
-  border: 1px solid #5D5D5D;
+  border: 1px solid #5d5d5d;
   border-radius: 8px;
   background: linear-gradient(#5d5d5d2d, #3d3d3d2d);
   overflow: hidden;
@@ -342,7 +342,6 @@ opacity: 15%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
 
 .slide {
@@ -554,6 +553,7 @@ opacity: 15%;
 .faq-title {
   padding-bottom: 4px;
   border-bottom: 4px solid #b4d744;
+  width: fit-content;
 }
 
 .faq-title > h2 {
@@ -620,6 +620,7 @@ opacity: 15%;
 .forms-title {
   padding-bottom: 4px;
   border-bottom: 4px solid #b4d744;
+  width: fit-content;
 }
 
 .forms-title > h2 {
@@ -647,7 +648,8 @@ opacity: 15%;
   padding-bottom: 16px;
 }
 
-input, textarea{
+input,
+textarea {
   padding: 9px 16px;
   border-radius: 8px;
   border: 1px solid #ffffff;
@@ -656,7 +658,8 @@ input, textarea{
   width: 400px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: 1px solid #b4d744;
   color: #ffffff;
 }
@@ -665,8 +668,13 @@ label {
   font-size: 0.875rem;
 }
 
+/* FOOTER */
+
 .footer {
-  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #1a1a1a;
   padding: 64px 120px;
 }
 
@@ -676,11 +684,35 @@ label {
 
 .footer-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 64px;
+}
+
+.footer-title-menu {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #b4d744;
+  width: fit-content;
+}
+
+.footer-title-menu > h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 /* FOOTER MENU */
+
+.footer-navmenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 .footer-menu {
   display: flex;
@@ -688,7 +720,7 @@ label {
   justify-content: space-around;
   list-style-type: none;
   width: 100%;
-  gap: 8px;
+  gap: 12px;
 }
 
 .footer-menu a:hover {
@@ -701,13 +733,111 @@ label {
   text-decoration: underline;
 }
 
+/* ENDEREÇO */
+
+.container-address {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-title-address {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #b4d744;
+  width: fit-content;
+}
+
+.footer-title-address > h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.container-address > a {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.container-address > a:hover {
+  font-size: 1rem;
+  color: #b4d744;
+  text-decoration: underline;
+}
+
+/* REDES SOCIAIS  */
+
+.conteiner-social {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-title-social {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #b4d744;
+  width: fit-content;
+}
+
+.footer-title-social > h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.social-content img:hover {
+  color: linear-gradient(#b4d744, #87a922);
+}
+
+/* TERMOS DE USO & POLÍTICAS DE PRIVACIDADE */
+
+.container-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-title-policy {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #b4d744;
+  width: fit-content;
+}
+
+.footer-title-policy > h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.policy-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.policy-links > a {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.policy-links > a:hover {
+  font-size: 1rem;
+  color: #b4d744;
+  text-decoration: underline;
+}
+
+/* DESENVOLVIDO POR */
+
 .developed {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  background-color: #1A1A1A; 
+  background-color: #1a1a1a;
   color: #ffffff;
   width: 100%;
 }
