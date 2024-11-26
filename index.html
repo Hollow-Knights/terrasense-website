@@ -359,24 +359,36 @@
         <h2>Fale Conosco</h2>
       </div>
       <div class="formulario-contato">
-        <form action="submit">
-          <div class="input-contact-form">
-            <label for="name">Nome</label>
-            <input type="text" id="name" placeholder="Digite o seu nome completo">
+        <form class="form" action="" id="form">
+          <div class="input-contact-form form-control">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite o seu nome completo">
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
           </div>
-          <div class="input-contact-form">
+          <div class="input-contact-form form-control">
             <label for="email">E-mail</label>
             <input type="email" id="email" placeholder="Digite o seu e-mail">
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
           </div>
-          <div class="input-contact-form">
-            <label for="tel">WhatsApp</label>
-            <input type="tel" id="tel" placeholder="Digite o número do seu WhatsApp">
+          <div class="input-contact-form form-control">
+            <label for="whatsapp">WhatsApp</label>
+            <input type="tel" id="whatsapp" placeholder="Digite o número do seu WhatsApp Ex: 35999999999">
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
           </div>
-          <div class="input-contact-form">
+          <div class="input-contact-form form-control">
             <label for="textarea">Mensagem</label>
-            <textarea id="textarea" rows="4" placeholder="Envie-nos uma mensagem"></textarea>
+            <textarea id="custom-message" rows="4" placeholder="Envie-nos uma mensagem"></textarea>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
           </div>
-          <button class="btn-filled" style="width: 100%;">Enviar</button>
+          <button type="submit" class="btn-filled" style="width: 100%;">Enviar</button>
         </form>
       </div>
     </div>
@@ -437,6 +449,8 @@
   </section>
 
   <!-- SCRIPTS -->
+  <script src="https://kit.fontawesome.com/4685cbf916.js" crossorigin="anonymous"></script>
+  <script src="./assests/js/form-validation.js"></script>
   <script src="./assests/js/faq-script.js"></script>
   <script src="./assests/js/offer-script.js"></script>
 </body>
