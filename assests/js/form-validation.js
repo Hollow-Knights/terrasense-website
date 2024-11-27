@@ -46,7 +46,7 @@ function checkInputs() {
   const formControls = form.querySelectorAll('.form-control')
 
   const formIsValid = [...formControls].every((formControl) => {
-    return (formControl.classnome === 'form-control success');
+    return (formControl.classname === 'form-control success');
   });
 
   if (formIsValid) {
@@ -62,17 +62,17 @@ function setErrorFor(input, message) {
 
   small.innerText = message;
 
-  formControl.classnome = 'form-control error';
+  formControl.classname = 'input-contact-form form-control error';
 }
 
 function setSuccessFor(input, message) {
   const formControl = input.parentElement;
 
-  formControl.classnome = 'form-control success';
+  formControl.classname = 'input-contact-form form-control success';
 }
 
 function checkWhatsapp(whatsapp) {
-  if (Number.isInteger(whatsapp) && whatsapp.toString().length === 11) {
+  if (Number.isInteger(whatsapp) && whatsapp.toString().length === 10) {
     return true;
   } else {
     return false;
