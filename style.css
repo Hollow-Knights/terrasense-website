@@ -677,13 +677,13 @@ label {
 
 .form-control i {
   position: absolute;
-  margin-top: 1px;
-  margin-left: -20px;
+  padding-top: 2px;
+  padding-left: 4px;
   visibility: hidden;
 }
 
 .form-control small {
-  color: #e74c3c;
+  padding-left: 24px;
   visibility: hidden;
 }
 

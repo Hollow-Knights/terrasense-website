@@ -21,7 +21,7 @@ function checkInputs() {
   } else if (!isFullName(nomeValue)) {
     setErrorFor(nome, 'Por favor, insira seu nome completo (ex.: João Silva).');
   } else {
-    setSuccessFor(nome, `${nome}, seu nome foi salvo!`);
+    setSuccessFor(nome, 'Seu nome foi salvo!');
   }
 
   if (emailValue === '') {
@@ -33,9 +33,9 @@ function checkInputs() {
   }
 
   if (whatsappValue === '') {
-    setErrorFor(whatsapp, 'O WhatsApp é obrigatório.');
-  } else if (!telefone_validation(whatsappValue)) {
-    setErrorFor(whatsapp, 'Por favor, digite um número de WhatsApp válido.');
+    setErrorFor(whatsapp, 'O whatsapp é obrigatório.');
+  } else if (whatsappValue.length < 15) {
+    setErrorFor(whatsapp, 'Por favor, digite um número de whatsapp válido.');
   } else {
     setSuccessFor(whatsapp);
   }
@@ -108,37 +108,26 @@ function checkEmail(email) {
   );
 }
 
-function telefone_validation(telefone) {
-  // Retira todos os caracteres não numéricos
-  telefone = telefone.replace(/\D/g, '');
-
-  // Verifica se o número tem a quantidade correta de dígitos
-  if (!(telefone.length >= 10 && telefone.length <= 11)) return false;
-
-  // Verifica se começa com 9 para números de celular com 11 dígitos
-  if (telefone.length == 11 && parseInt(telefone.substring(2, 3)) != 9) return false;
-
-  // Verifica se o número não é uma sequência repetida
-  for (let n = 0; n < 10; n++) {
-    if (telefone == new Array(11).join(n) || telefone == new Array(12).join(n)) return false;
-  }
-
-  // DDDs válidos
-  const codigosDDD = [
-    11, 12, 13, 14, 15, 16, 17, 18, 19,
-    21, 22, 24, 27, 28, 31, 32, 33, 34,
-    35, 37, 38, 41, 42, 43, 44, 45, 46,
-    47, 48, 49, 51, 53, 54, 55, 61, 62,
-    64, 63, 65, 66, 67, 68, 69, 71, 73,
-    74, 75, 77, 79, 81, 82, 83, 84, 85,
-    86, 87, 88, 89, 91, 92, 93, 94, 95,
-    96, 97, 98, 99
-  ];
-  if (codigosDDD.indexOf(parseInt(telefone.substring(0, 2))) == -1) return false;
-
-  // Verifica o número principal para telefones fixos antes de 2017
-  if (new Date().getFullYear() < 2017) return true;
-  if (telefone.length == 10 && [2, 3, 4, 5, 7].indexOf(parseInt(telefone.substring(2, 3))) == -1) return false;
-
-  return true;
+/* Máscaras WhatsApp */
+function mascara(o,f){
+  v_obj=o
+  v_fun=f
+  setTimeout("execmascara()",1)
+}
+function execmascara(){
+  v_obj.value=v_fun(v_obj.value)
+}
+function mtel(v){
+  v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+  v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+  v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+  return v;
+}
+function id( el ){
+return document.getElementById( el );
+}
+window.onload = function(){
+id('whatsapp').onkeyup = function(){
+  mascara( this, mtel );
+}
 }
