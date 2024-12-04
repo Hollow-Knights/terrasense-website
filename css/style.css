@@ -74,7 +74,7 @@ body {
 
 .link {
   display: inline-block;
-  color: #b4d744;
+  color: #ffffff;
   font-size: 1rem;
   transition: 0.3s;
   text-decoration: none;
@@ -134,10 +134,7 @@ body {
 /* QUEM SOMOS */
 
 .quem-somos {
-  padding: 64px 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-bottom: 64px;
   gap: 32px;
   border-bottom: 1px solid #b4d744;
 }
@@ -251,17 +248,18 @@ body {
 .simbol-background {
   position: relative;
   top: 50%;
-  right: 50%;
+  left: -42%;
   opacity: 15%;
 }
 
 .offer-container {
-  padding: 64px 120px;
+  padding-bottom: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 
 .offer-container h2 {
   color: #ffffff;
@@ -288,13 +286,14 @@ body {
   gap: 32px;
 }
 
+
 .slide-container {
   position: relative;
   display: flex;
-  width: 90%;
   height: auto;
   align-items: center;
   justify-content: center;
+  padding: 0px !important;
   border: 1px solid #5d5d5d;
   border-radius: 8px;
   background: linear-gradient(#5d5d5d2d, #3d3d3d2d);
@@ -302,8 +301,6 @@ body {
 }
 
 .slider {
-  max-width: 100%;
-  margin: auto;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -355,6 +352,24 @@ body {
 .next {
   position: absolute;
   right: 2%;
+}
+
+@media (max-width: 992px) {
+  .slide {
+    flex-direction: column;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .image-container > img {
+    height: 360px;
+  }
 }
 
 /* AGRO AI */
@@ -710,6 +725,7 @@ label {
 .footer-navmenu {
   display: flex;
   flex-direction: row;
+  gap: 24px;
 }
 
 .container-footer-menu {
@@ -725,6 +741,7 @@ label {
   list-style-type: none;
   width: 100%;
   gap: 12px;
+  padding-left: 0px;
 }
 
 .footer-menu a:hover {
