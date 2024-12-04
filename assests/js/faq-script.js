@@ -8,9 +8,9 @@ buttons.forEach(button => {
     const img = button.querySelector('img');
 
     if (description.classList.contains('faq-description-off')) {
-      img.src = './src/faq-arrow-close.svg';
+      img.src = './src/faq-icons/faq-arrow-close.svg';
     } else {
-      img.src = './src/faq-arrow-open.svg';
+      img.src = './src/faq-icons/faq-arrow-open.svg';
     };
   });
 });

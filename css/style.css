@@ -13,28 +13,9 @@ body {
   background-color: #050505;
 }
 
-/* HEADER */
-#link-logo {
-  transition: all 0.2s linear;
-}
-
-#link-logo:hover {
-  transform: scale(1.1);
-}
-
-header {
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  background-color: hsla(0, 0%, 4%, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: auto;
-  padding: 12px 120px;
-  gap: 64px;
-  border-bottom: 1px solid #b4d744;
-  z-index: 2;
+::selection {
+  background-color: #87a922;
+  color: #050505;
 }
 
 /* BUTTONS */
@@ -42,8 +23,8 @@ header {
 .header-buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
-  width: 18rem;
 }
 
 .header-buttons a {
@@ -82,21 +63,13 @@ header {
   border: none;
   border-radius: 8px;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .btn-filled:hover {
   background-color: #87a922;
   color: #f1f8cf;
   cursor: pointer;
-}
-
-/* NAVMENU */
-
-.ul-navmenu {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  width: 100%;
 }
 
 .link-menu {
@@ -107,40 +80,24 @@ header {
   text-decoration: none;
 }
 
-.ul-navmenu a:hover {
+.link-menu a {
   color: #87a922;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-.ul-navmenu a.selected {
-  color: #87a922;
-  text-decoration: underline;
-}
-
-.link {
-  color: #b4d744;
-  text-decoration: underline;
-}
-
-link a:hover {
-  color: #87a922;
-  text-decoration: underline;
-}
-
-link a.selected {
+.link-menu a:hover {
   color: #87a922;
   text-decoration: underline;
 }
 
 .hero {
-  background-image: url(./src/terrasense_background_hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   width: 100%;
-  padding-bottom: 120px;
+  height: 100vh;
   display: flex;
-  gap: 64px;
+  gap: 32px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -154,9 +111,10 @@ link a.selected {
 }
 
 .container-hero > h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
+  text-align: center;
 }
 
 .container-hero > img {
@@ -169,8 +127,8 @@ link a.selected {
 }
 
 #hero-logo {
-  padding-top: 64px;
-  width: 240px;
+  padding-top: 120px;
+  width: 180px;
 }
 
 /* QUEM SOMOS */
@@ -182,9 +140,6 @@ link a.selected {
   align-items: center;
   justify-content: center;
   gap: 32px;
-  background-image: url(./src/background_pattern.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
   border-bottom: 1px solid #b4d744;
 }
 
@@ -291,9 +246,6 @@ link a.selected {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(./src/background_pattern.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .offer-container h2 {
@@ -402,9 +354,6 @@ link a.selected {
   gap: 64px;
   align-items: center;
   justify-content: center;
-  background-image: url(./src/background_pattern.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .agro-ai-img > img {
@@ -451,9 +400,6 @@ link a.selected {
   display: flex;
   flex-direction: column;
   padding: 64px 120px;
-  background-image: url(./src/background_pattern.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .header-cards-container {
@@ -541,9 +487,6 @@ link a.selected {
   flex-direction: column;
   padding: 64px 120px;
   gap: 24px;
-  background-image: url(./src/background_pattern.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .faq-description-off {
@@ -602,9 +545,6 @@ link a.selected {
   align-items: center;
   padding: 64px 120px;
   gap: 240px;
-  background-image: url(./src/background_pattern.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .img-fale-conosco img {
@@ -660,7 +600,7 @@ textarea {
   border: 1px solid #ffffff;
   background-color: #ffffff00;
   color: #ffffff;
-  width: 400px;
+  width: 430px;
 }
 
 input:focus,
@@ -675,45 +615,45 @@ label {
 
 /* Error and Success */
 
-.form-control i {
+.controle-formulario i {
   position: absolute;
   padding-top: 2px;
   padding-left: 4px;
   visibility: hidden;
 }
 
-.form-control small {
+.controle-formulario small {
   padding-left: 24px;
   visibility: hidden;
 }
 
-.form-control.success input {
+.controle-formulario.success input {
   border-color: #b4d744;
 }
 
-.form-control.success textarea {
+.controle-formulario.success textarea {
   border-color: #b4d744;
 }
 
-.form-control.error input {
+.controle-formulario.error input {
   border-color: #e74c3c;
 }
 
-.form-control.error textarea {
+.controle-formulario.error textarea {
   border-color: #e74c3c;
 }
 
-.form-control.success i.fa-check-circle {
+.controle-formulario.success i.fa-check-circle {
   color: #b4d744;
   visibility: visible !important;
 }
 
-.form-control.error i.fa-exclamation-circle {
+.controle-formulario.error i.fa-exclamation-circle {
   color: #e74c3c;
   visibility: visible !important;
 }
 
-.form-control.error small {
+.controle-formulario.error small {
   color: #e74c3c;
   visibility: visible !important;
 }

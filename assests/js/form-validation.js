@@ -1,4 +1,4 @@
-const form = document.getElementById('form');
+const form = document.getElementById('contact-form');
 const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const whatsapp = document.getElementById('whatsapp');
@@ -50,7 +50,7 @@ function checkInputs() {
     setSuccessFor(customMessage, 'Mensagem enviada!');
   }
 
-  const formControls = form.querySelectorAll('.form-control')
+  const formControls = form.querySelectorAll('.controle-formulario')
 
   const formIsValid = [...formControls].every((formControl) => {
     return formControl.classList.contains('success'); // Verifica se todos os inputs têm a classe 'success'
@@ -82,13 +82,13 @@ function setErrorFor(input, message) {
   small.innerText = message;
 
   // Aplica a classe de erro
-  formControl.className = 'input-contact-form form-control error';
+  formControl.className = 'input-contact-form controle-formulario error';
 }
 
 function setSuccessFor(input, message) {
   const formControl = input.parentElement;
 
-  formControl.className = 'input-contact-form form-control success';
+  formControl.className = 'input-contact-form controle-formulario success';
 }
 
 function isFullName(name) {
