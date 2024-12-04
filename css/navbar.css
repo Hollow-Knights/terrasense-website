@@ -49,12 +49,14 @@ nav {
   background-color:hsla(0, 0%, 4%, 0.95) !important;
 }
 
-.ul-navmenu a:hover {
-  color: #87a922;
-  text-decoration: underline;
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
-.ul-navmenu a.selected {
+.ul-navmenu a:hover {
   color: #87a922;
   text-decoration: underline;
 }

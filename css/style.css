@@ -72,20 +72,20 @@ body {
   cursor: pointer;
 }
 
-.link-menu {
+.link {
   display: inline-block;
-  color: #ffffff;
+  color: #b4d744;
   font-size: 1rem;
   transition: 0.3s;
   text-decoration: none;
 }
 
-.link-menu a {
+.link a {
   color: #87a922;
   text-decoration: none;
 }
 
-.link-menu a:hover {
+.link:hover {
   color: #87a922;
   text-decoration: underline;
 }
@@ -136,17 +136,32 @@ body {
 .quem-somos {
   padding: 64px 120px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   gap: 32px;
   border-bottom: 1px solid #b4d744;
 }
 
+.quem-somos-parte1 {
+  display: flex;
+  align-items: center;
+}
+
 .quem-somos-img {
-  margin-left: -150px;
-  margin-bottom: -68px;
-  z-index: -1;
+  width: 360px;
+}
+
+@media (max-width: 991px) {
+  .quem-somos-parte1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quem-somos-img {
+    margin: 0px;
+    width: 320px;
+  }
+
 }
 
 .que-tal-transformar {
@@ -300,7 +315,6 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  text-align: left;
   overflow: hidden;
 }
 
@@ -309,16 +323,13 @@ body {
 }
 
 .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  padding: 64px 120px;
+  width: 50%;
+  padding: 64px 72px;
 }
 
 .content-container > h2 {
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .content-container > h2 > span {
@@ -338,12 +349,12 @@ body {
 
 .prev {
   position: absolute;
-  left: 5%;
+  left: 2%;
 }
 
 .next {
   position: absolute;
-  right: 5%;
+  right: 2%;
 }
 
 /* AGRO AI */
@@ -426,8 +437,6 @@ body {
 }
 
 .cards-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -457,6 +466,7 @@ body {
 .header-card-noticia {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .titulo-noticia {
@@ -470,9 +480,7 @@ body {
 }
 
 .categoria-noticia {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 32px;
   background-color: #b4d744;
   border-radius: 50px;
   color: #3e4e19;
