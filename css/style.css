@@ -262,13 +262,6 @@ body {
   padding-top: 16px;
 }
 
-.simbol-background {
-  position: relative;
-  top: 50%;
-  left: -42%;
-  opacity: 15%;
-}
-
 .offer-container {
   padding-bottom: 64px;
   display: flex;
@@ -440,10 +433,6 @@ body {
   line-height: 150%;
 }
 
-.agro-ai-content > img {
-  width: 220px;
-}
-
 .agro-ai-content > ol > li {
   color: #b0b0b0;
   font-size: 1rem;
@@ -604,8 +593,16 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 64px 120px;
-  gap: 240px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  gap: 160px;
+}
+
+@media (max-width: 992px) {
+  .container-fale-conosco {
+    flex-direction: column;
+    gap: 48px;
+  }
 }
 
 .img-fale-conosco img {
@@ -616,6 +613,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
 }
 
 .forms-title {
@@ -661,7 +659,7 @@ textarea {
   border: 1px solid #ffffff;
   background-color: #ffffff00;
   color: #ffffff;
-  width: 430px;
+  width: 100%;
 }
 
 input:focus,
@@ -786,6 +784,7 @@ label {
   width: 100%;
   gap: 12px;
   padding-left: 0px;
+  min-width: 85px;
 }
 
 .footer-menu a:hover {
@@ -804,6 +803,7 @@ label {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 205px;
 }
 
 .footer-title-address {
@@ -837,6 +837,8 @@ label {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 140px !important;
+  max-width: 140px !important;
 }
 
 .footer-title-social {
